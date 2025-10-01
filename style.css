@@ -17,9 +17,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   font-family: sans-serif;
   padding: 20px;
+  gap: 12px;
 }
 
 .box {
@@ -59,9 +60,12 @@ h3 {
 }
 
 .box p {
-  margin-bottom: 20px;
+  max-width: 300px; 
+  margin-left: 0;
+  margin-right: auto; 
   font-size: 14px;
   color: var(--grey);
+  
 }
 
 hr {
