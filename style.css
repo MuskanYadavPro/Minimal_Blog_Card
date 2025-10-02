@@ -1,7 +1,7 @@
 :root {
   --purple-light: #f3e8ff;
   --purple: #6a0dad;
-  --grey: #777777;
+  --grey: #4a4a4a;
   --text1: #dddddd;
 }
 
@@ -32,7 +32,6 @@ body {
   border-radius: 16px;
   text-align: left;
   margin-bottom: 20px;
-  
 }
 
 .box .tag {
@@ -40,11 +39,10 @@ body {
   background-color: var(--purple-light);
   color: var(--purple);
   font-weight: bold;
-  width:min-content;
+  width: min-content;
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
   display: inline-block;
-  
 }
 
 .box .author {
@@ -63,13 +61,12 @@ h3 {
 }
 
 .box p {
-  max-width: 300px; 
+  max-width: 300px;
   margin-left: 0;
-  margin-right: auto; 
+  margin-right: auto;
   font-size: 14px;
   color: var(--grey);
   line-height: 1.5;
-  
 }
 
 hr {
@@ -78,7 +75,6 @@ hr {
   border-top: 1px solid #ddd;
   margin: 12px 0;
 }
-
 
 footer {
   font-size: 14px;
@@ -90,3 +86,13 @@ footer {
   padding: 10px 0;
 }
 
+/* New styles for picture and img */
+.box picture,
+.box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 220px;
+}
