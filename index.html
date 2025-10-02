@@ -3,34 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-      rel="icon"
-      href="favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+  <meta name="description" content="Discover how minimalist design inspires simplicity and elegance in art and everyday life." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="96x96" />
+
   <title>devChallenges.io | Minimal Blog Card</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preload" as="image" href="Cactus.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="Cactus.jpg" type="image/jpeg" fetchpriority="high" />
+
+  <link rel="stylesheet" href="style.css?v=1.0.0" />
 </head>
+
 <body>
   <!-- Blog Card -->
   <div class="box">
-    <img src="Cactus.jpg" alt="a beautiful cactus">
-    <span class = "tag">Design </span>
+    <picture>
+      <source srcset="Cactus.webp" type="image/webp" />
+      <source srcset="Cactus.jpg" type="image/jpeg" />
+      <img src="Cactus.jpg" alt="a beautiful cactus" width="368" height="220" fetchpriority="high" />
+    </picture>
+    <span class="tag">Design</span>
     <h3>Embracing Minimalism</h3>
     <p>
-      From minimalist sculptures to minimalist paintings, this blog will inspire you
-      to appreciate the beauty that lies in simplicity.
+      From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.
     </p>
-     <span class = "author">Annie Spratt </span>
+    <span class="author">Annie Spratt</span>
   </div>
 
-  <!-- Footer  -->
+  <!-- Footer -->
   <footer>
     <div class="author-info">
-      Coded by 
+      Coded by
       <a href="#">Muskan Yadav</a>
-      | Challenge by 
+      | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank" rel="noopener noreferrer">
         devChallenges.io
       </a>.
